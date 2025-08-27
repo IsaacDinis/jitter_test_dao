@@ -17,7 +17,7 @@ status2=$?
 
 # If both succeeded, run the second Python script
 if [ $status1 -eq 0 ] && [ $status2 -eq 0 ]; then
-    echo "Both finished successfully, running script2.py..."
+    echo "Both finished successfully, running compare_results.py..."
     python3 ../apps/compare_results.py
 else
     echo "Error: one of the programs failed (Python=$status1, C=$status2). Exiting."
